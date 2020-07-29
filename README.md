@@ -18,3 +18,5 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score.
 
+
+![Screen Shot 2020-07-28 at 11 28 20 PM](https://user-images.githubusercontent.com/66890142/88764595-13d85e00-d12a-11ea-9b44-b8134cea260f.png)
