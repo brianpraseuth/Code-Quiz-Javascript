@@ -6,3 +6,6 @@
     display: none;
 }
 
+.listItem {
+    list-style: none;
+}

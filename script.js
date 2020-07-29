@@ -25,6 +25,8 @@ function startTime() {
   }, 1000);
 }
 
+quizOver.classList.add("hide");
+
 // Array containing questions and answers for the quiz.
 var quizQuestions = [
     {
@@ -70,6 +72,7 @@ var quizQuestions = [
       var answer = document.createElement("button");
       answer.setAttribute("value", currentQuestion.answers[i]);
       answer.setAttribute("class", "btn btn-dark");
+      item.setAttribute("class", "listItem");
       answer.onclick = checkAnswer;
       answer.textContent = currentQuestion.answers[i];
       item.append(answer);
@@ -81,7 +84,6 @@ var quizQuestions = [
   function setScreen() {
     startPage.classList.add("hide");
     quizContainer.classList.remove("hide");
-    quizOver.classList.add("hide");
     startQuiz();
     startTime();
   }
