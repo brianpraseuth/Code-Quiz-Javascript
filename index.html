@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Coding Quiz</title>
+
+</head>
+
+<body>
+    <header>
+    <!-- Create a div containing a link to the high scores that will store client-side information/previous games -->
+        <a href="scores.html" id="highScores">View High Scores</a>
+
+        <!-- Create a div containing a timer that will be in the right hand corner -->
+        <div id="timeLeft" class="float-right"></div>
+    </header>
+
+    <!-- Starting div showing rules and start button -->
+    <div id="startingPage" class="container">
+        <h1 class="page-header text-center">Coding Quiz Challenge</h1>
+        <hr>
+        <p class="lead text-center">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+        <br>
+        <div class="text-center"> 
+            <button id="startButton" class="btn btn-dark">Start Quiz!</button> 
+        </div>
+        </div>
+    </div>
+
+    <!-- Quiz Div containing a question/multiple choice answer formatted to work with quizQuestions array -->
+    <div id="quizArea" class="container hide">
+        <h2><span  id="question">Question:</span></h2>
+        <ul id="answers">
+        </ul>
+        <hr>
+    <p id="answerResults"></p>
+    </div>
+
+    <!-- Create a div asking the user to store score in high scores the quiz ends -->
+    <div id="endGame">
+        <h2>The Quiz is over! Would you like to input your score?</h2>
+        <input type="text">
+    </div>
+    
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
